@@ -5,26 +5,26 @@ import datetime
 import time
 
 
-#
-# def loader(url_string, dataset):
-#     r = requests.get(url_string)
-#     if r.status_code == 200:
-#         root = ET.fromstring(r.text)
-#         order = {}
-#         for payment_list in root:
-#             for payment in payment_list:
-#                 order[payment.tag] = payment.text
-#             dataset.append(order)
-#         return dataset
-#     else:
-#         print('Ваш звонок очень важен для нас, попробуйте запросить позднее...')
-#
-# # url_string = 'http://printbar.advcake.com/export/admitad?pass=q8q77yzh4IGPYkiHjgGcvBGdbF3Jbh3J'
-# url_string = 'https://adspire.io/reports/admitad_actions/11767/mixit.ru/admitad/6raIpdDU'
-# dataset = []
-#
-# loader(url_string, dataset)
-# print(dataset)
+
+def loader(url_string, dataset):
+    r = requests.get(url_string)
+    if r.status_code == 200:
+        root = ET.fromstring(r.text)
+        order = {}
+        for payment_list in root:
+            for payment in payment_list:
+                order[payment.tag] = payment.text
+            dataset.append(order)
+        return dataset
+    else:
+        print('Ваш звонок очень важен для нас, попробуйте запросить позднее...')
+
+# url_string = 'http://printbar.advcake.com/export/admitad?pass=q8q77yzh4IGPYkiHjgGcvBGdbF3Jbh3J'
+url_string = 'https://adspire.io/reports/admitad_actions/11767/mixit.ru/admitad/6raIpdDU'
+dataset = []
+
+loader(url_string, dataset)
+print(dataset)
 
 
 dataset = [{'uid': '83f8aa6aee6af6337c999ce0b5d9af', 'order_id': '13', 'tariff_code': '1', 'action_code': '1',
