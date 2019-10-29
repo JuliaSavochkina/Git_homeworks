@@ -49,7 +49,7 @@ def key_present(dataset):
             'currency_code', 'position_count', 'position_id', 'datetime_action']
     for each in dataset:
         if len(each.keys()) != len(keys):
-            print('Не достаточно полей для сбора заказа order_id = ' + each['order_id'])
+            print('Недостаточно полей для сбора заказа order_id = ' + each['order_id'])
     # return = list(map(lambda keys, dataset: print('Недостаточно данных для обработки order_id=' + y['order_id'])
     #                      for x in keys for y in dataset if x != y), dataset)
 
