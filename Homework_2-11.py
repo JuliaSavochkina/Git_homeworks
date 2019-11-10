@@ -15,7 +15,7 @@ if requests.get(url).status_code == 200:
 
     # Authorization
     browser.find_element_by_name('USER_LOGIN').send_keys('j.savochkina@admitad.com')
-    browser.find_element_by_name('USER_PASSWORD').send_keys('L4KcJWn9Ef6ef5')
+    browser.find_element_by_name('USER_PASSWORD').send_keys('')
     browser.find_element_by_class_name('login-btn').click()
 
     # 2fa
