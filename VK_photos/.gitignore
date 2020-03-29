@@ -1,0 +1,6 @@
+.idea
+venv
+.DS_Store
+/workspace.xml
+__pycache__
+private_info.py
