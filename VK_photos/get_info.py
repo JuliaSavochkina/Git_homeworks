@@ -17,8 +17,8 @@ def gen_links() -> list:
     try:
         url: str = 'https://api.vk.com/method/photos.getAll'
         params: dict = {'v': '5.52',
-                  'access_token': token,
-                  'count': '100'}
+                        'access_token': token,
+                        'count': '100'}
 
         data: dict = requests.get(url, params).json()['response']['items']
 
