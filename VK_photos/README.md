@@ -5,4 +5,5 @@
 
 В файле private_info.py содержатся ключи от приложения:
 * <code>client_id</code> - ID приложения  
+
 ![Посмотреть скриншот](http://i.imgur.com/J5lRizg.png)
