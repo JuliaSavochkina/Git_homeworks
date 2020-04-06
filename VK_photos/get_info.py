@@ -6,7 +6,7 @@ from selenium_funcs import selen
 def auth(client_id: str, scope: str = 'photos') -> str:
     auth_url = f'https://oauth.vk.com/authorize?client_id={client_id}&display=page&' \
                f'redirect_uri=https://oauth.vk.com/blank.html&scope={scope}&response_type=token&v=5.103'
-    auth_token = selen(auth_url)
+    auth_token: str = selen(auth_url)
     return auth_token
 
 
