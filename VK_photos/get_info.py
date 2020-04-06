@@ -37,7 +37,7 @@ def gen_links(token: str) -> list:
 
 if __name__ == '__main__':
     token = auth(client_id)
-    print(token)
+    # print(token)
     gen = gen_links(token)
     for each in gen:
         print(each)
