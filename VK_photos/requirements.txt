@@ -1,2 +1,4 @@
 redis
+re
 requests
+selenium
