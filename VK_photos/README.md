@@ -7,3 +7,6 @@
 * <code>client_id</code> - ID приложения  
 
 ![Посмотреть скриншот](http://i.imgur.com/J5lRizg.png)
+
+* <code>email</code> - почта или номер телефона от авторизации VK  
+* <code>password</code> - пароль от VK
