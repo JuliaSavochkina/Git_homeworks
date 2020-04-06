@@ -3,7 +3,7 @@ import re
 from private_info import client_id
 from selenium.webdriver.chrome.options import Options
 import requests
-
+from private_info import email, password
 
 def selen(auth_url: str) -> str:
     chrome_options = Options()
@@ -15,8 +15,8 @@ def selen(auth_url: str) -> str:
         browser.get(auth_url)
 
         # Authorization
-        browser.find_element_by_name('email').send_keys('Julie-Webster@ya.ru')
-        browser.find_element_by_name('pass').send_keys('L4KcJWn9Ef6ef5L4KcJWn9')
+        browser.find_element_by_name('email').send_keys(email)
+        browser.find_element_by_name('pass').send_keys(password)
         browser.find_element_by_css_selector('#install_allow').click()
 
         # 2fa
