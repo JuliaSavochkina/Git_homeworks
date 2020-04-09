@@ -3,7 +3,7 @@ import requests
 
 
 """docker pull redis
-docker run -p 6379:6379 --rm --name redis redis
+docker run -p 6379:6379 --rm --name redis_VK redis
 Чтобы подключить redis-cli, запустите еще один докер:
 docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379"""
 
