@@ -7,8 +7,8 @@ import threading
 gen = gen_links(auth(client_id))
 threads = []
 for each in gen:
-    t1 = threading.Thread(target=download_to_redis(each))
-    t1.start()
-    threads.append(t1)
+    t = threading.Thread(target=download_to_redis(each))
+    t.start()
+    threads.append(t)
 for thread in threads:
     thread.join()
