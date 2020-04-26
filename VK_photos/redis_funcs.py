@@ -22,6 +22,6 @@ def get_value_from_redis(key: str) -> str:
 
 
 if __name__ == '__main__':
-    image_url = "https://sun9-62.userapi.com/c9883/u636052/-6/x_0f1c9741.jpg"
+    image_url = "https://sun9-61.userapi.com/c840735/v840735393/7c880/6hDXQSbA0fY.jpg"
     download_to_redis(image_url)
-    print(get_value_from_redis("x_0f1c9741.jpg"))
+    print(get_value_from_redis("6hDXQSbA0fY.jpg"))
