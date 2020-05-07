@@ -7,4 +7,4 @@ from private_info import client_id
 with concurrent.futures.ThreadPoolExecutor() as executor:
     gen = gen_links(auth(client_id))
     for each in gen:
-        executor.submit(download_to_redis, each).result()  # потому что подаю по ссылке, а не листом
+        executor.submit(download_to_redis, each)
